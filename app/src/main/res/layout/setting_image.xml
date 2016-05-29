@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarJasnosc"
+        android:indeterminate="false"
+        android:max="100"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/domyslne"
+        android:layout_toStartOf="@+id/domyslne" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textViewJasnosc"
+        android:text="       "
+        android:layout_alignTop="@+id/seekBarJasnosc"
+        android:layout_alignLeft="@+id/textViewNasycenie"
+        android:layout_alignStart="@+id/textViewNasycenie"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Jasność"
+        android:id="@+id/textView"
+        android:layout_above="@+id/textViewJasnosc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarKontrast"
+        android:indeterminate="false"
+        android:max="100"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="34dp"
+        android:layout_toStartOf="@+id/textViewKontrast"
+        android:layout_alignRight="@+id/seekBarJasnosc"
+        android:layout_alignEnd="@+id/seekBarJasnosc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textViewKontrast"
+        android:text="       "
+        android:layout_alignTop="@+id/seekBarKontrast"
+        android:layout_alignLeft="@+id/textViewJasnosc"
+        android:layout_alignStart="@+id/textViewJasnosc"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Kontrast"
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/seekBarKontrast"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="18dp" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarNasycenie"
+        android:indeterminate="false"
+        android:max="100"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/textViewNasycenie"
+        android:layout_toLeftOf="@+id/textViewNasycenie" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textViewNasycenie"
+        android:text="       "
+        android:layout_alignTop="@+id/seekBarNasycenie"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/seekBarBarwa"
+        android:layout_toEndOf="@+id/seekBarBarwa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Nasycenie"
+        android:id="@+id/textView5"
+        android:layout_alignBottom="@+id/seekBarNasycenie"
+        android:layout_marginBottom="18dp" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarBarwa"
+        android:indeterminate="false"
+        android:max="100"
+        android:layout_marginBottom="61dp"
+        android:layout_above="@+id/save"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/textViewBarwa"
+        android:layout_toStartOf="@+id/textViewBarwa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textViewBarwa"
+        android:text="       "
+        android:layout_alignBottom="@+id/seekBarBarwa"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/seekBarJasnosc"
+        android:layout_alignLeft="@+id/domyslne"
+        android:layout_alignStart="@+id/domyslne" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Barwa"
+        android:id="@+id/textView4"
+        android:layout_alignBottom="@+id/seekBarBarwa"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="18dp" />
+
+    <!--<ImageView-->
+        <!--android:layout_width="640px"-->
+        <!--android:layout_height="480px"-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zapisz"
+        android:id="@+id/save"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zastosuj"
+        android:id="@+id/zastosuj"
+        android:layout_above="@+id/save"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Domyślnie"
+        android:id="@+id/domyslne"
+        android:layout_above="@+id/save"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Podgląd"
+        android:id="@+id/podglad"
+        android:layout_above="@+id/save"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="640px"
+        android:layout_height="320px"
+        android:id="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
